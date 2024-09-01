@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Playwrite+CU:wght@100..400&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+.start_video_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.start_video_container video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+.main_content {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  position: relative;
+  z-index: 1;
+}
+
+.back_video video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.main {
+  position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  z-index: 2;
+}
+
+.Nav_bar {
+  display: flex;
+  margin-top: 0;
+}
+
+.p2p:hover #list1 {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.nav_list {
+  margin: auto;
+  display: flex;
+  color: #7e4528;
+  gap: 50px;
+}
+.logo {
+  position: absolute;
+  right: 20%;
+  width: 60px;
+}
+.nav_list ul {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: rgb(99, 63, 43);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.nav_list ul::after {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -2px;
+  height: 3px;
+  width: 0;
+  background-color: #7e4528;
+  transition: width 0.5s ease;
+}
+
+.nav_list ul:hover::after {
+  width: 70%;
+}
+
+#p2p {
+  position: relative;
+}
+
+#p2p_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #57370668;
+  height: 8rem;
+  width: 14rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+#p2p:hover + #p2p_div {
+  opacity: 1;
+}
+
+#p2p_div ul {
+  color: black;
+  font-weight: 900;
+  text-align: start;
+}
+
+#resource {
+  position: relative;
+}
+
+#resource_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #57370668;
+  height: 12rem;
+  width: 14rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  left: 425px;
+  z-index: -1;
+}
+
+#resource_div ul{
+  color: black;
+  font-weight: 900;
+  text-align: start;
+}
+#resource:hover + #resource_div {
+  opacity: 1;
+}
+
+#roadmap {
+  position: relative;
+}
+
+#roadmap_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #57370668;
+  height: 12rem;
+  width: 18rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  left: 623px;
+  z-index: -1;
+}
+#roadmap_div ul{
+  color: black;
+  font-weight: 900;
+  text-align: start;
+}
+#roadmap:hover + #roadmap_div {
+  opacity: 1;
+}
+
+#Alumni {
+  position: relative;
+}
+
+#Alumni_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #57370668;
+  height: 12rem;
+  width: 12rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  left: 845px;
+  z-index:-1;
+}
+#Alumni_div ul{
+  color: black;
+  text-align: start;
+  font-weight: 900;
+}
+#Alumni:hover + #Alumni_div {
+  opacity: 1;
+}
+
+#mentorship {
+  position: relative;
+}
+
+#mentorship_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #57370668;
+  height: 12rem;
+  width: 16rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  left: 980px;
+  z-index: -1;
+}
+#mentorship_div ul{
+  color: black;
+  text-align: start;
+  font-weight: 900;
+
+}
+#mentorship:hover + #mentorship_div {
+  opacity: 1;
+}
+
+#review {
+  position: relative;
+}
+
+#review_div {
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  background-color: #573706;
+  height: 25rem;
+  width: 20rem;
+  margin-top: 3rem;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 1rem rgba(128, 128, 128, 0.205);
+  border-radius: 20px;
+  left: 1200px;
+  z-index: -1;
+}
+#review_div ul{
+  color: black;
+  text-align: start;
+  font-weight: 900;
+}
+
+
+.hero_section{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 100px;
+
+  
+}
+
+#hero_section_heading{
+  font-size: 48px;
+  font-weight: 700;
+  color: #573706;
+}
+
+#hero_section_para{
+  font-size: 24px;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  gap: 40px;
+}
+
+.left_text{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.card-container{
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+.card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+
+}
+
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  color: black;
+  border-radius: 20px;
+}
+
+.front {
+  background-image: url(components/images.jpg);
+  transform: rotateY(0deg);
+  box-shadow: #573706 5px 5px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+.back {
+  background-image: url(components/pexels-pixabay-235985.jpg);
+  transform: rotateY(180deg);
+  color: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back p{
+  font-size: 18px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+  transition: all 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signUpbtn {
+  background-color: #633f2b4b;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+
+
+ 
+}
+
+.signUpbtn:hover {
+  background-color: #633f2b;
+  transition: all 0.5s ease;
+}
+
+
+
+
+
