@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background-color: #e8c89281;
+}
+
+header {
+    color: #3596A3;
+  
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav a {
+  color: #633f2b;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+header nav a:hover {
+    color: #3596A3;
+
+}
+
+.hero {
+  display: flex;
+  gap: 300px;
+  
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #65412c;
+  margin-top: 150px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+}
+
+.hero p {
+  color: black;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.hero .btn {
+  background-color: #fff;
+  color: #337ab7;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero_img{
+    margin-top: 100px;
+}
+
+.hero .btn:hover {
+  background-color: #ccc;
+}
+
+.features {
+  padding: 100px;
+  
+}
+
+.features ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 20px;
+}
+
+.features i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.features h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonials {
+  padding: 40px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.testimonials_div {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+}
+
+.testimonials_div div {
+  width: 400px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+
+}
+.testimonials_div div:hover{
+    transform: scale(1.01);
+    transition: all 0.1s ease;
+    color: #337ab7;
+}
+.testimonials_div p{
+    font-size: 24px;
+}
+
+
+
+.signUpbtn {
+  background-color: #633f2b4b;
+  width: 200px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  color: black;
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.signUpbtn:hover {
+  background-color: #633f2b;
+  transition: all 0.5s ease;
+}

@@ -21,6 +21,11 @@ review.addEventListener("click", () => {
   window.location.href = "review.html";
 });
 
+const p2p = document.querySelector("#p2p");
+p2p.addEventListener("click", () => {
+  window.location.href = "p2p.html";
+});
+
 const slides = document.querySelectorAll(".slide");
 const radioButtons = document.querySelectorAll('input[type="radio"]');
 const leftBtn = document.getElementById("leftBtn");

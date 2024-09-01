@@ -6,6 +6,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+  
 }
 
 .main {
@@ -331,7 +332,7 @@ html {
 }
 
 .front {
-  background-image: url(components/images.jpg);
+  background-image: url(https://res.cloudinary.com/dhqcpzmkl/image/upload/v1725172479/images_jnhqef.jpg);
   transform: rotateY(0deg);
   box-shadow: #573706 5px 5px ;
   display: flex;
@@ -341,7 +342,7 @@ html {
 }
 
 .back {
-  background-image: url(components/pexels-pixabay-235985.jpg);
+  background-image: url(https://res.cloudinary.com/dhqcpzmkl/image/upload/v1725172508/pexels-pixabay-235985_jrqugt.jpg);
   transform: rotateY(180deg);
   color: burlywood;
   display: flex;
@@ -356,23 +357,6 @@ html {
   transform: rotateY(180deg);
   transition: all 1s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -399,6 +383,90 @@ html {
 }
 
 
+.community {
+  background:  #d9ac7689;
+
+  margin-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.community h2{
+  color: #000000;
+  font-size: 36px;
+
+}
+
+.community p{
+  color: #633F2B;
+  font-size: 20px;
+  margin-top: 0;
+}
 
 
 
+footer {
+  background: linear-gradient(  #d9ac7689,#442e1f9b);
+  margin-top: 20px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 30%;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  margin-top: 0;
+}
+
+.footer-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 10px;
+}
+
+.footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  color: #ccc;
+}
+
+.footer-copyright {
+  background-color: #6A4732;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.footer-copyright p {
+  margin: 0;
+}
